@@ -20,7 +20,6 @@ function createGalleryMarkup(gallery) {
 }
 
 let lightbox = new SimpleLightbox(".gallery a", {
-  captionType: "alt",
-  captionPosition: bottom,
+  captionsData: "alt",
   captionDelay: 250,
 });
