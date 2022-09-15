@@ -49,13 +49,11 @@ function onClickImage(e) {
           .querySelector("img")
           .addEventListener("click", instance.close);
 
-        //   window.addEventListener("keydown", (e) => {
-        //     if (e.code === "Escape") {
-        //       console.log(e.code);
-        //       console.log(instance);
-        //       instance.close;
-        //     }
-        //   });
+        window.addEventListener("keydown", (e) => {
+          if (e.code === "Escape") {
+            instance.close;
+          }
+        });
       },
 
       onClose: (instance) => {
